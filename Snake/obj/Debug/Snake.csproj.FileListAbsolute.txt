@@ -7,3 +7,6 @@ F:\IT progr\Git projects\Snake\Snake\obj\Debug\Snake.pdb
 F:\IT progr\Git projects\Snake\Snake.git\Snake\bin\Debug\Snake.exe.config
 F:\IT progr\Git projects\Snake\Snake.git\Snake\obj\Debug\Snake.exe
 F:\IT progr\Git projects\Snake\Snake.git\Snake\obj\Debug\Snake.pdb
+F:\IT progr\Git projects\Snake\Snake.git\Snake\bin\Debug\Snake.exe
+F:\IT progr\Git projects\Snake\Snake.git\Snake\bin\Debug\Snake.pdb
+F:\IT progr\Git projects\Snake\Snake.git\Snake\obj\Debug\Snake.csprojResolveAssemblyReference.cache
