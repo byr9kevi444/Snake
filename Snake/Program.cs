@@ -18,10 +18,10 @@ namespace Snake
             VerticalLine vrLineLeft = new VerticalLine ( 0, 0, 15, '+');   
             VerticalLine vrLineRight = new VerticalLine(55, 0, 15, '+');
 
-            hrLineUp.Draw();
-            hrLineDown.Draw();
-            vrLineLeft.Draw();
-            vrLineRight.Draw();
+            hrLineUp.Drow();
+            hrLineDown.Drow();
+            vrLineLeft.Drow();
+            vrLineRight.Drow();
              
             // малюю точки
             Point p1 = new Point(3, 4, '*');
