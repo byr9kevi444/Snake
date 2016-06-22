@@ -24,12 +24,11 @@ namespace Snake
             vrLineRight.Drow();
              
             // малюю точки
-            Point p1 = new Point(3, 4, '*');
-            p1.Draw(); 
+            Point p = new Point(4, 5, '*');
+            Snake snake = new Snake( p, 4, Direction.RIGHT);
 
 
 
-            Console.ReadLine();
         }
        
     }
