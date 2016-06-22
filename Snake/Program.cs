@@ -14,10 +14,10 @@ namespace Snake
             Console.SetBufferSize(120, 30);
 
             // малюю рамку
-            HorizontalLine hrLineUp = new HorizontalLine ( 0, 55, 0, '+');
-            HorizontalLine hrLineDown = new HorizontalLine ( 0, 55, 15, '+');
-            VerticalLine vrLineLeft = new VerticalLine ( 0, 0, 15, '+');   
-            VerticalLine vrLineRight = new VerticalLine(55, 0, 15, '+');
+            HorizontalLine hrLineUp = new HorizontalLine ( 0, 118, 0, '+');
+            HorizontalLine hrLineDown = new HorizontalLine ( 0, 118, 28, '+');
+            VerticalLine vrLineLeft = new VerticalLine ( 0, 0, 28, '+');   
+            VerticalLine vrLineRight = new VerticalLine(118, 0, 28, '+');
 
             hrLineUp.Drow();
             hrLineDown.Drow();
@@ -28,9 +28,27 @@ namespace Snake
             Point p = new Point(4, 5, '*');
             Snake snake = new Snake( p, 4, Direction.RIGHT);
             snake.Drow();
+
+            FoodCreator foodCreator = new FoodCreator(116, 25, '$');
+            Point food = foodCreator.CreateFood();
+            food.Draw();
+
+
             
             while(true)
             {
+                if (snake.Eat (food))
+                {
+                    food = foodCreator.CreateFood();
+                    food.Draw();
+                }
+                else
+                {
+                    snake.Move();
+                }
+
+                Thread.Sleep(100);
+
                 if(Console.KeyAvailable)
                 {
                     ConsoleKeyInfo key = Console.ReadKey();
